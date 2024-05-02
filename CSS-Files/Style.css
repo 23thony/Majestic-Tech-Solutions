@@ -340,8 +340,17 @@ html{
     padding: 15px;
     border-radius: 15px;
     margin-left: 7px;
-  }
-  
+
+    display: inline-block;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 3px 7px rgb(42, 35, 68); /* Box shadow */
+    transition: transform 0.4s;
+}
+
+.Gallery-Images:hover {
+    transform: translateY(-10px);   
+}
   .Gallery-Images,
   .Gallery-core-images {
     background-color: #ffffff;
