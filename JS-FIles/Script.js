@@ -98,4 +98,55 @@ document.getElementById('add_to_cart_4').addEventListener('submit', function (ev
 // Offering Page Script Ends Here
 
 // Login Page Script Starts Here 
+    // Function to handle form submission
+document.getElementById('loginForm').addEventListener('submit', function (event) {
+    // Prevent default form submission
+    event.preventDefault();
+
+    // Show the popup on successful form submission
+    openLoginPopup();
+
+    // Optional: Reset the form after submission
+    this.reset(); // Reset the form fields
+});
+
+// Function to open the login popup
+function openLoginPopup() {
+    var loginPopupContainer = document.getElementById('loginPopupContainer');
+    loginPopupContainer.style.display = 'block';
+    setTimeout(function () {
+        loginPopupContainer.style.height = '100%';
+    }, 100);
+}
+
+// Function to close the login popup
+function closeLoginPopup() {
+    var loginPopupContainer = document.getElementById('loginPopupContainer');
+    loginPopupContainer.style.height = '0'; // Collapsing the height to hide the popup
+    setTimeout(function () {
+        loginPopupContainer.style.display = 'none';
+    }, 500); // Delay for transition completion
+}
+// Function to close any popup
+    function closePopup() {
+        var popupContainer = document.querySelector('.popup-container.show-popup');
+        if (popupContainer) {
+            popupContainer.classList.remove('show-popup');
+            setTimeout(function () {
+                popupContainer.style.display = 'none';
+            }, 500); // Delay for transition completion
+        }
+    }
+
+    // Event listener for login form submission
+    document.getElementById('loginForm').addEventListener('submit', function (event) {
+        // Prevent default form submission
+        event.preventDefault();
+
+        // Show the login popup on successful form submission
+        openLoginPopup();
+
+        // Optional: Reset the form after submission
+        this.reset(); // Reset the form fields
+    });
 // Login Page Script Ends Here 

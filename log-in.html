@@ -3,9 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Log In || Welcome Back!</title>
+        <title>Log In</title>
         <link rel="stylesheet" href="CSS-Files/login.css">
-        <!-- Registar-Log-in style sheet  -->
         <!-- Roboto Google Font Link -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +16,9 @@
         <link rel="shortcut icon" type="x-icon" href="Project-Media/Images/Majestic-tech-rounded.png" id="icon">
         <!-- Footer Icon Link -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <!-- JavaScript File Link -->
+        <script src="JS-FIles/Script.js"></script>
+        
 
     </head>
     <body class="Container">
@@ -95,11 +97,11 @@
             </div>
     
             <div class="footer-center">
-                <div>
+                <!-- <div>
                     <i class="fa fa-map-marker"></i>
                     <p><span class="footer-span">Location:</span>
                         Jamaica</p>
-                </div>
+                </div> -->
     
                 <div>
                     <i class="fa fa-phone"></i>
@@ -127,59 +129,5 @@
                 </div>
                 
         </footer>
-            <!-- JavaScript to Control Popup -->
-            <script>
-                // Function to handle form submission
-                    document.getElementById('loginForm').addEventListener('submit', function (event) {
-                        // Prevent default form submission
-                        event.preventDefault();
-
-                        // Show the popup on successful form submission
-                        openLoginPopup();
-
-                        // Optional: Reset the form after submission
-                        this.reset(); // Reset the form fields
-                    });
-
-                    // Function to open the login popup
-                    function openLoginPopup() {
-                        var loginPopupContainer = document.getElementById('loginPopupContainer');
-                        loginPopupContainer.style.display = 'block';
-                        setTimeout(function () {
-                            loginPopupContainer.style.height = '100%';
-                        }, 100);
-                    }
-
-                    // Function to close the login popup
-                    function closeLoginPopup() {
-                        var loginPopupContainer = document.getElementById('loginPopupContainer');
-                        loginPopupContainer.style.height = '0'; // Collapsing the height to hide the popup
-                        setTimeout(function () {
-                            loginPopupContainer.style.display = 'none';
-                        }, 500); // Delay for transition completion
-                    }
-                    // Function to close any popup
-                        function closePopup() {
-                            var popupContainer = document.querySelector('.popup-container.show-popup');
-                            if (popupContainer) {
-                                popupContainer.classList.remove('show-popup');
-                                setTimeout(function () {
-                                    popupContainer.style.display = 'none';
-                                }, 500); // Delay for transition completion
-                            }
-                        }
-
-                        // Event listener for login form submission
-                        document.getElementById('loginForm').addEventListener('submit', function (event) {
-                            // Prevent default form submission
-                            event.preventDefault();
-
-                            // Show the login popup on successful form submission
-                            openLoginPopup();
-
-                            // Optional: Reset the form after submission
-                            this.reset(); // Reset the form fields
-                        });
-            </script>
     </body>
 </html>
