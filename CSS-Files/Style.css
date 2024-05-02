@@ -405,6 +405,12 @@ html{
 
 .Offering-Figure{
     display: inline-block;
+    padding: 10px;
+    border-radius: 15px;
+    border: solid 1px #000000;
+    box-shadow: 0 3px 7px rgb(48, 47, 47); /* Box shadow */
+    transition: transform 0.4s
+	
 }
 
     .Home-page-laptop-title {
