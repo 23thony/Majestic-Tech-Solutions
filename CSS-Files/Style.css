@@ -412,6 +412,10 @@ html{
 	
 }
 
+.Offering-Figure:hover {
+    transform: translateY(-10px);
+}
+
     .Home-page-laptop-title {
         text-align: center;
         text-decoration: aqua;
