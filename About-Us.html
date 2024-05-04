@@ -17,6 +17,10 @@
     <link rel="shortcut icon" type="x-icon" href="Project-Media/Images/Majestic-tech-rounded.png" id="icon">
     <!-- Footer Icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+     <script src="JS-FIles/Script.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
 </head>
 <body>
     <!--Header Section-->
@@ -69,7 +73,7 @@
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
                     <textarea name="message" placeholder="Your Message" required></textarea>
-                    <button type="submit">Send Message</button>
+                    <button type="button" onclick="sendMail()">Send Message</button>
                 </form>
             </div>
         </section>
