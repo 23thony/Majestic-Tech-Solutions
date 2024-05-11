@@ -17,18 +17,16 @@
         <!-- Footer Icon Link -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <!-- JavaScript File Link -->
-        <script src="JS-FIles/Script.js"></script>
+        <script src="JS-FIles/registration-login.js"></script>
         
 
     </head>
     <body class="Container">
-        <!--Header Section-->
+        <!-- Header Section -->
         <header class="Header">
-            <!--Logo Section of The Navigation Bar-->
             <a href="index.html" class="Logo">
                 <img src="Project-Media/Images/Majestic-tech-rounded.png" class="LOGO-img" alt="LOGO">
             </a>
-            <!--Navigation Links-->
             <nav class="navbar">
                 <a href="index.html">Home</a>
                 <a href="About-Us.html">About</a>
@@ -37,45 +35,29 @@
                 <a href="log-in.html">Log In</a>
             </nav>
         </header>
-        
-            
-            
-            
-        <!--Main Content Section-->
+    
+        <!-- Main Content Section -->
         <main class="section">
             <div class="background">
                 <div class="shape"></div>
                 <div class="shape"></div>
             </div>
-            <form>
+            <form id="loginForm">
                 <h3>Login Here</h3>
-        
                 <label for="username">Username</label>
                 <input type="text" placeholder="Email or Phone" id="username">
-        
                 <label for="password">Password</label>
                 <input type="password" placeholder="Password" id="password">
-        
-                <button>Log In</button>
+                <button type="submit">Log In</button>
                 <div class="social">
-                  <div class="go"><i class="fab fa-google"></i>  Google</div>
-                  <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
+                    <button class="go" id="googleLogin"><i class="fab fa-google"></i> Google</button>
+                    <button class="fb" id="facebookLogin"><i class="fab fa-facebook"></i> Facebook</button>
                 </div>
-            </form>  
-            
-                <!-- Popup Container for Login Submission Message -->
-                <div class="popup-container" id="loginPopupContainer">
-                    <div class="popup-content">
-                        <span class="close-btn" onclick="closePopup()">X</span>
-                        <h2>Login Successful!</h2>
-                        <p>You are now logged in. Welcome back!</p>
-                        <p style="text-align: center;">q(≧▽≦q)</p>
-                    </div>
-                </div>
-
-                </section>                
+                <p>Don't have an account? <a href="registration form.html">Register Now</a></p>
+            </form>
+        </main>
         </main><br><br><br>
-
+    
         
         <!--Footer-->
         <footer class="footer-distributed">
