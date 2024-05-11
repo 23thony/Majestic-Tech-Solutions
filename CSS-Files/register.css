@@ -55,7 +55,7 @@
 /* Main Content Styling */
 
 .unique-section {
-    padding-left: 25%;
+    padding-left: 0;
 }
 
 form {
@@ -66,6 +66,8 @@ form {
     border-radius: 8px;
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
    
+    position: relative;
+	left: 17%;
 }
 
 
