@@ -64,8 +64,7 @@ html{
 
 
 .Main-Content{
-    width: 90%;
-    width: max-content;
+    
     min-width: 100px;
     margin-top: 0%;
    
@@ -139,15 +138,28 @@ html{
         font-weight: 500;
     }
 
-    .Figure-Images {
+    .Figured-Images {
         width: 300px;
+        
+        
+        padding: 15px;
+        border-radius: 15px;
+        margin-left: 7px;
+    
         display: inline-block;
+        padding: 10px;
+        border-radius: 15px;
+        box-shadow: 0 3px 7px rgb(42, 35, 68); /* Box shadow */
+        transition: transform 0.4s;
     }
+    .Figured-Images:hover {
+        transform: translateY(-10px);   
+    }
+    
 
-    a {
-        text-decoration: none;
-        color: black;
-    }
+   
+
+    
 /* Content Pages Section layout Ends Here */
 /*The Main Layout Ends Here*/
 /* Main Styling - Index-Main Page */
@@ -328,7 +340,7 @@ html{
   
   .Image-Container {
     display: grid;
-    grid-template-columns: 390px 390px 390px;
+    grid-template-columns: 500px 500px 500px;
     /* background-color: #ffffff; */
     border-radius: 10px;
   
@@ -520,48 +532,6 @@ html{
 
 }
 
-/*javascript*/
-
-.popup-container {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; /* Changed height to 100% */
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 999;
-    overflow: hidden;
-    transition: height 0.5s ease;
-}
-
-.popup-content {
-    position: relative;
-    background-color: #fff;
-    max-width: 400px;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    animation: slideDown 0.5s ease;
-}
-
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    font-size: 20px;
-}
-
-@keyframes slideDown {
-    from {
-        transform: translateY(-100%);
-    }
-    to {
-        transform: translateY(0);
-    }
-}
 
 /* Offering layout Styling Ends Here */
 
