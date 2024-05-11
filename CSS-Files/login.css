@@ -93,7 +93,7 @@ label {
 }
 
 .fab {
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 
@@ -185,17 +185,24 @@ label {
   ::placeholder{
       color: #000000;
   }
-  button{
-      margin-top: 50px;
-      width: 100%;
-      background-color: #ffffff;
-      color: #080710;
-      padding: 15px 0;
-      font-size: 18px;
-      font-weight: 600;
-      border-radius: 5px;
-      cursor: pointer;
-  }
+  button {
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add smooth transition effect */
+}
+
+button:hover {
+    background-color: #3b2f96;
+    color: #ffffff;
+}
+
   .social{
     margin-top: 30px;
     display: flex;
@@ -219,53 +226,11 @@ label {
   .social i{
     margin-right: 4px;
 }
-
-
-
 /* Log-in Styling Ends Here */
-/*javascript*/
 
-.popup-container {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 0;
-            background-color: rgba(0, 0, 0, 0.5);
-            z-index: 999;
-            overflow: hidden;
-            transition: height 0.5s ease;
-        }
 
-        .popup-content {
-            position: relative;
-            background-color: #fff;
-            max-width: 400px;
-            margin: 20px auto;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-            animation: slideDown 0.5s ease;
-        }
-
-        .close-btn {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            cursor: pointer;
-            font-size: 20px;
-        }
-
-        @keyframes slideDown {
-            from {
-                transform: translateY(-100%);
-            }
-            to {
-                transform: translateY(0);
-            }
-        }
-
+/* registration starts here*/
+/* registration ends here*/
 /* The Footer layout Starts Here */
 
 footer {
